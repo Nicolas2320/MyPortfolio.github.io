@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/34b0cdac63.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/NICOLAS.png" class="logo">
+                <ul id="sidemenu">
+                    <strong>
+                        <li><a href="#menu" onclick="closemenu()">Inicio</a></il>
+                        <li><a href="#about" onclick="closemenu()">Acerca de mí</a></il>
+                        <li><a href="#services" onclick="closemenu()">Servicios</a></il>
+                        <li><a href="#portfolio" onclick="closemenu()">Proyectos</a></il>
+                        <li><a href="#contact" onclick="closemenu()">Contacto</a></il>
+                    </strong>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div class="header-text">
+            <h1><span>Nicolas Valderrama</span> <br> Ingeniero Mecatrónico</h1>
+            <div class="bubbles">
+                <span style="--i:10;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:08;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:09;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:08;"></span>
+                <span style="--i:08;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:09;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:09;"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Acerca de Mí</h1>
+                    <p style="text-align: justify;">Estudiante en formación en Ingeniería Mecatrónica, con conocimiento
+                        en áreas como la mecánica, la electrónica y el control de sistemas. A lo largo de mi carrera he
+                        realizado
+                        diferentes proyectos en lo que respecta a manejo de software y bases de datos, ademas en
+                        sistemas de automatizacion y control de plantas para la eficiencia de procesos.
+                        Adicionalmente, he realizado cursos con certificaciones en inteligencia artificial y analisis de
+                        datos.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('education')">Educación</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Deep Learning</span><br>TensorFlow, Pytorch & Keras</li>
+                            <li><span>Analisis de datos</span><br>R, PowerBi, SQL & MongoDB</li>
+                            <li><span>Control & Automatizacion</span><br>Tia Portal & MATLAB</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>EXPERIENCE</span><br>Experience</li>
+                            <li><span>EXPERIENCE</span><br>Experience</li>
+                            <li><span>EXPERIENCE</span><br>Experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachillerato (2006 - 2017)</span><br>Instituto San Juan de Dios</li>
+                            <li><span>Pregrado (2018 - 2024)</span><br>Universidad Militar Nueva Granada</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Mis Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Desarrollo Web</h2>
+                    <p style="text-align: justify;">Creación de aplicaciones, mediante el diseño, desarrollo e
+                        implementación de sitios web. Junto
+                        entornos como lo son HTML, CSS y JavaScript.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Análisis de Datos</h2>
+                    <p style="text-align: justify;">Recolección, procesamiento y análisis de datos para identificar
+                        patrones, tendencias y relaciones
+                        que puede ser utilizadas para la toma de decisiones.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-helmet-safety"></i>
+                    <h2>Automatización Integrada</h2>
+                    <p style="text-align: justify;">Diseñar, desarrollar y mantener sistemas de automatización, para el
+                        control de procesos
+                        industriales, mediante controladores lógicos programables (PLC) y sensores.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio ---------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mis proyectos</h1>
+            <div class="loading">
+                <div class="ring"></div>
+                <span>En Espera</span>
+            </div>
+
+
+            <!-- <div class="work-list">
+                <div class="work">
+                    <img src="images/background.png">
+                    <div class="layer">
+                        <h3></h3>
+                        <p>
+                        </p>
+                        <a href="https://xlightproductions-col.web.app/Productos.html"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/background.png">
+                    <div class="layer">
+                        <h3></h3>
+                        <p>
+                        </p>
+                        <a href="images/PowerBi.pdf" download class=""><i class="fa-solid fa-file-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/background.png">
+                    <div class="layer">
+                        <h3></h3>
+                        <p>
+                        </p>
+                        <a href="images/Automatizacion_V.pdf" download class=""><i
+                                class="fa-solid fa-file-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <a href="#" class="btn">See More...</a> -->
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contactame</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>nicolasvalderramabarrera@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+57 (323) 257-3618</p>
+                    <div class="social-icons">
+                        <a href="https://api.whatsapp.com/send?phone=573222573618"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Nicolas2320"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/nicolasvalde_23"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nicolás-valderrama-barrera-b4294b1b8"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Descargar CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Tu Nombre" required>
+                        <input type="email" name="Email" placeholder="Tu Correo" required>
+                        <textarea name="Message" rows="6" placeholder="Mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                    <span id="msg" style="font-weight: bold;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made in Colombia <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby42-ILKUv3YJPkQP0-gn9DMP8oTpAb0hZ93c5t6MniP7OcWZ2hWt5w7EeEjUMQxpsY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Contacto Enviado!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
