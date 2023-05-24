@@ -12,9 +12,9 @@ html {
 
 :root {
     --color-primary: #ff004f;
-    --color-secondary:#b54769;
+    --color-secondary: #b54769;
     --color-bar: #262626;
-  }
+}
 
 body {
     background: #080808;
@@ -309,21 +309,30 @@ nav ul li a:hover::after {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    z-index: 0;
 }
 
 .loading span {
+    display: flex;
+    align-items: center;
     color: #737373;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 200px;
-    animation: text 3s ease-in-out infinite;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    z-index: 2;
 }
 
-@keyframes text {
-    50% {
-        color: #080808;
-    }
+.loading a {
+    display: inline-block;
+    font-size: 40px;
+    color: #ababab;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.loading a:hover {
+    color: #fff;
+    transform: scale(1.1);
 }
 
 .work-list {
@@ -527,7 +536,7 @@ nav .fa-solid {
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;   
+        transition: right 0.5s;
     }
 
     nav ul li {
