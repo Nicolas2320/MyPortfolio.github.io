@@ -218,6 +218,12 @@ nav ul li a:hover::after {
     display: block;
 }
 
+.tab-contents ul a{
+    text-decoration: none;
+    color: #ababab;
+    
+}
+
 /* SERVICES */
 
 #services {
