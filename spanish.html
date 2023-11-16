@@ -30,6 +30,16 @@
                         <li><a href="#services" onclick="closemenu()">Servicios</a></il>
                         <li><a href="#portfolio" onclick="closemenu()">Proyectos</a></il>
                         <li><a href="#contact" onclick="closemenu()">Contacto</a></il>
+                        <li>
+                            <div id="language-selector">
+                                <a href="#" class="language-link" onclick="changeToSpanish()">
+                                    <img src="images/espanol.png" alt="Spanish Flag" class="flag-icon">
+                                </a>
+                                <a href="#" class="language-link" onclick="changeToEnglish()">
+                                    <img src="images/ingles.png" alt="English Flag" class="flag-icon">
+                                </a>
+                            </div>
+                            </il>
                     </strong>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -41,50 +51,7 @@
     <div id="menu">
         <div class="header-text">
             <h1><span>Nicolas Valderrama Barrera</span> <br> Ingeniero Mecatrónico</h1>
-            <div class="bubbles">
-                <span style="--i:10;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:08;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:09;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:10;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:19;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:10;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:08;"></span>
-                <span style="--i:08;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:09;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:09;"></span>
-            </div>
+            <div class="bubbles" id="bubbles-container"></div>
         </div>
     </div>
 
@@ -227,7 +194,7 @@
                         <a href="https://www.linkedin.com/in/nicolás-valderrama-barrera-b4294b1b8" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="images/NicolasValderrama-Resume.pdf" download class="btn btn2">Descargar CV</a>
+                    <a href="images/CV_espanol.pdf" download class="btn btn2">Descargar CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -241,7 +208,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Made in Colombia <i class="fa-solid fa-heart"></i></p>
+            <p>Hecho en Colombia <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
 
@@ -294,6 +261,30 @@
             sidemenu.style.right = "-200px";
         }
 
+    </script>
+
+    <script>
+        const container = document.getElementById('bubbles-container');
+
+        // Números aleatorios del 7 al 25
+        const randomNumbers = Array.from({ length: 40 }, () => Math.floor(Math.random() * 19) + 7);
+
+        // Crear spans con los valores aleatorios
+        randomNumbers.forEach(num => {
+            const span = document.createElement('span');
+            span.style.setProperty('--i', num);
+            container.appendChild(span);
+        });
+    </script>
+
+    <script>
+        function changeToSpanish() {
+            window.location.href = 'spanish.html';
+        }
+
+        function changeToEnglish() {
+            window.location.href = 'english.html';
+        }
     </script>
 
 </body>

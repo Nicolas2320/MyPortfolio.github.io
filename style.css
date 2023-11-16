@@ -35,6 +35,13 @@ body {
     padding: 20px 10%;
 }
 
+.flag-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
 nav {
     justify-content: space-between;
     display: flex;
@@ -218,10 +225,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
-.tab-contents ul a{
+.tab-contents ul a {
     text-decoration: none;
     color: #ababab;
-    
+
 }
 
 /* SERVICES */
